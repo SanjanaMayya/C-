@@ -1,0 +1,25 @@
+using System;
+class Animal
+{
+    public void Eat()
+    {
+        Console.WriteLine("Animal is Eating.");
+    }
+}
+class Dog:Animal
+{
+    public void Bark()
+    {
+        Console.WriteLine("Dog is Barking.");
+    }
+}
+class MainProgram
+{
+    public static void Main(string[] args)
+    {
+        Dog d = new Dog();
+        d.Eat();
+        d.Bark();
+        Console.WriteLine("*------ End of Single Inheritance ------*");
+    }
+}
